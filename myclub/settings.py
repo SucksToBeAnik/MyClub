@@ -36,7 +36,7 @@ DEBUG = str(os.environ.get('DEBUG')) == '1'
 ALLOWED_HOSTS = []
 
 if not DEBUG:
-    ALLOWED_HOSTS+= ['127.0.0.1','https://clubofjami.herokuapp.com/']
+    ALLOWED_HOSTS+= ['clubofjami.herokuapp.com']
 
 
 # Application definition
