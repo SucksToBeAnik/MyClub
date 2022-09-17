@@ -88,13 +88,23 @@ WSGI_APPLICATION = 'myclub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd3m2559kvmr1nt',
+        'USER':'hjobgwkuzdleny',
+        'PASSWORD':'bca4562efdca221addd66fa6b5c67ea5f71051f5b5977cabc60e0ca25b3e2aaf',
+        'HOST':'ec2-52-207-15-147.compute-1.amazonaws.com',
+        'PORT':'5432'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

@@ -3,18 +3,13 @@
 {% load static %}
 
 {% block content %}
+<div>
   
 <center>
   <p>As of {{time}}</p>
   <div class="">{{ cal|safe }}</div>
   <br /><br /><br /></center>
   <!-- <img src="{% static 'images/anik.jpg' %}" alt=""> -->
-  <div class="embed-responsive">
-    <iframe src="https://www.evernote.com/shard/s597/sh/5a248952-de61-ba02-68ba-adce4e214144/425d211da57a24e93a685b15eee4c615" class="embed-responsive-item"></iframe>
-  </div>
-  <div class="embed-responsive">
-    <iframe src="search_events"></iframe>
-  </div>
   
   
   {% if event_list %}
@@ -56,5 +51,5 @@
 
   <br />
   <!-- Copyright (c) {{current_year}} -->
-
+</div>
 {% endblock %}

@@ -29,7 +29,7 @@ def admin_approval(request):
     user_count=User.objects.all().count()
     pending=Event.objects.filter(approved=False).count()
 
-    event_list=Event.objects.order_by('-event_date')
+    event_list=Event.objects.order_by('-event_date') 
     if request.user.is_superuser:
         if request.method=='POST':
             messages.success(request,'Evnents approvals have been updated!')
