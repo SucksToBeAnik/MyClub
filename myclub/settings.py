@@ -33,7 +33,7 @@ SECRET_KEY=os.environ.get("SECRET_KEY")
 DEBUG = str(os.environ.get('DEBUG')) == '1'
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['clubofjami.herokuapp.com']
 
 if not DEBUG:
     ALLOWED_HOSTS+= ['clubofjami.herokuapp.com']
